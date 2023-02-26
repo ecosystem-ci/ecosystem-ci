@@ -1,7 +1,7 @@
 {
 	"name": "ecosystem-ci",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "A tool to run ci across ecosystems",
 	"license": "MIT",
 	"homepage": "https://github.com/ecosystem-ci/ecosystem-ci/packages/ecosystem-ci#readme",

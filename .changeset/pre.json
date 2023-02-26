@@ -2,7 +2,7 @@
   "mode": "pre",
   "tag": "next",
   "initialVersions": {
-    "ecosystem-ci": "1.0.0"
+    "ecosystem-ci": "0.1.0"
   },
   "changesets": []
 }
