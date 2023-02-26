@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "ecosystem-ci": "1.0.0"
+  },
+  "changesets": []
+}
