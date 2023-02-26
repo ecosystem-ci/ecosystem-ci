@@ -1,0 +1,11 @@
+{
+	"extends": "@antfu",
+	"rules": {
+		"semi": ["error", "always"],
+		"@typescript-eslint/semi": ["error", "always"],
+		"no-tabs": "off",
+		"indent": ["error", "tab"],
+		"@typescript-eslint/indent": ["error", "tab"],
+		"jsonc/indent": ["error", "tab"]
+	}
+}

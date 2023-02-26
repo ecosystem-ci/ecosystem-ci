@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
+	"changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "ecosystem-ci/ecosystem-ci" }],
+  "commit": false,
+  "fixed": [],
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main",
+	"bumpVersionsWithWorkspaceProtocolOnly": true,
+	"//enable-ignore-if-we-have-unpublished-packages-in-the-future": "remove this comment and the leading // of //ignore",
+	"//ignore": ["!(@ecosystem-ci/*|ecosystem-ci)"]
+}

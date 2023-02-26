@@ -1,0 +1,43 @@
+{
+	"name": "ecosystem-ci-monorepo",
+	"type": "module",
+	"version": "0.0.0",
+	"private": true,
+	"packageManager": "pnpm@7.28.0",
+	"description": "Monorepo for ecosystem-ci",
+	"license": "MIT",
+	"homepage": "https://github.com/ecosystem-ci/ecosystem-ci#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ecosystem-ci/ecosystem-ci.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ecosystem-ci/ecosystem-ci/issues"
+	},
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=7"
+	},
+	"scripts": {
+		"prepare": "pnpm exec simple-git-hooks",
+		"lint": "eslint .",
+		"lint:fix": "pnpm lint --fix",
+		"typecheck": "pnpm -r typecheck",
+		"release": "changeset publish"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^0.35.3",
+		"@changesets/cli": "^2.26.0",
+		"@svitejs/changesets-changelog-github-compact": "^1.1.0",
+		"eslint": "^8.35.0",
+		"lint-staged": "^13.1.2",
+		"simple-git-hooks": "^2.8.1",
+		"typescript": "^4.9.5"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "pnpm lint-staged"
+	},
+	"lint-staged": {
+		"*": "eslint --fix"
+	}
+}

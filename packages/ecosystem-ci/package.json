@@ -1,0 +1,33 @@
+{
+	"name": "ecosystem-ci",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "A tool to run ci across ecosystems",
+	"license": "MIT",
+	"homepage": "https://github.com/ecosystem-ci/ecosystem-ci/packages/ecosystem-ci#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ecosystem-ci/ecosystem-ci.git",
+		"directory": "packages/ecosystem-ci"
+	},
+	"bugs": {
+		"url": "https://github.com/ecosystem-ci/ecosystem-ci/issues"
+	},
+	"exports": {
+		".": {
+			"types": "./types/index.d.ts"
+		}
+	},
+	"types": "./types/index.d.ts",
+	"bin": "src/cli.js",
+	"files": ["src", "types"],
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"typescript": "^4.9.5"
+	}
+}

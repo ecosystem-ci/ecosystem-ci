@@ -1,0 +1,33 @@
+# logs and temp
+*.log
+*.cpuprofile
+temp
+*.tmp
+logs
+
+# outputs
+build
+dist
+
+# env
+*.local
+.env
+
+# libs
+node_modules
+.pnpm-store
+
+# ide
+.idea
+.vscode
+
+# macos
+.DS_Store
+._.DS_Store
+
+# other
+coverage
+.cache
+*.tgz
+lib-cov
+
